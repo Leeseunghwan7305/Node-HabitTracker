@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 let bodyParser = require("body-parser");
+require("dotenv").config();
 const e = require("cors");
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
