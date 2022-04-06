@@ -60,6 +60,7 @@
   background-color: #6eeeff;
   height: 700px;
   border-radius: 0.5em;
+  overflow-y: scroll;
 }
 .todo {
   height: 100%;
@@ -85,9 +86,13 @@
   padding: 15px;
   width: 80px;
   height: 80px;
+  min-width: 80px;
   margin-right: 20px;
   border: none;
   border-radius: 0.5em;
+}
+.content2 {
+  width: 50%;
 }
 .listLeft {
   display: flex;
@@ -119,10 +124,46 @@
     height: 180vh;
   }
   .send {
-    width: 100%;
+    width: 80%;
     margin: 0;
   }
   .todos {
+    width: 80%;
+  }
+  .send button {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .listLeft .inputCheck {
+    width: 15px;
+    height: 15px;
+    margin-left: 25px;
+  }
+  .listLeft .inputNoCheck {
+    width: 15px;
+    height: 15px;
+    margin-left: 25px;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    align-items: center;
     width: 100%;
+    margin: 0 auto;
+  }
+  .content2 {
+    width: 50%;
+  }
+  .list button {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
   }
 }

@@ -89,9 +89,11 @@ function App() {
                           });
                       }}
                     ></div>
-                    <div>
+                    <div className="content2">
                       <p className={item.input ? "content" : ""}>
-                        할일:{item.todo}
+                        할일
+                        <br />
+                        {item.todo}
                       </p>
                       <p className={item.input ? "content" : ""}>
                         {item.date} 까지
