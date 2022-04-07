@@ -96,7 +96,7 @@ function App() {
                         {item.todo}
                       </p>
                       <p className={item.input ? "content" : ""}>
-                        {item.date} 까지
+                        {item.date} 까지!
                       </p>
                     </div>
                   </div>
