@@ -90,14 +90,8 @@ function App() {
                       }}
                     ></div>
                     <div className="content2">
-                      <p className={item.input ? "content" : ""}>
-                        할일
-                        <br />
-                        {item.todo}
-                      </p>
-                      <p className={item.input ? "content" : ""}>
-                        {item.date} 까지!
-                      </p>
+                      <p className={item.input ? "content" : ""}>{item.todo}</p>
+                      <p className={item.input ? "content" : ""}>{item.date}</p>
                     </div>
                   </div>
                   <button id={item._id} onClick={todoDelete}>

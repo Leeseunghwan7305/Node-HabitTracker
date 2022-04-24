@@ -11,7 +11,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("file:///C:/Users/user/Downloads/wave-haikei%20(1).svg");
+  -ms-overflow-style: none;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes identifier {
 }
 .container {
@@ -61,6 +66,7 @@
   height: 700px;
   border-radius: 0.5em;
   overflow-y: scroll;
+  -ms-overflow-style: none;
 }
 .todo {
   height: 100%;
@@ -91,8 +97,13 @@
   border: none;
   border-radius: 0.5em;
 }
+
 .content2 {
   width: 50%;
+  -ms-overflow-style: none;
+  .content2::-webkit-scrollbar {
+    display: none;
+  }
 }
 .listLeft {
   display: flex;
@@ -116,7 +127,7 @@
 .content {
   text-decoration: line-through;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
   .container {
     flex-direction: column;
   }
@@ -129,6 +140,7 @@
   }
   .todos {
     width: 80%;
+    margin-top: 3em;
   }
   .send button {
     height: 80px;
